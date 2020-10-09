@@ -2,6 +2,7 @@
 
 /*
 Plugin Name: WB ACF Autocomplete
+Plugin URI: https://github.com/washaweb/wb_acf_autocomplete
 Description: Simple field that looks up values previously entered for this field, only compatible with ACF v5.0.
 Version: 1.0.0
 Author: Washaweb
