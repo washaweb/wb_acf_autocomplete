@@ -100,7 +100,7 @@ class wb_acf_field_autocomplete extends acf_field {
 				//debug
         // $results = array( 'key' => $_GET['field_key'], 'request' => $_GET['request'] );
 
-        $results = $wpdb->get_col( $wpdb->prepare( "SELECT DISTINCT meta_value FROM $wpdb->postmeta WHERE meta_key = %s AND meta_value LIKE %s",
+        $results = $wpdb->get_col( $wpdb->prepare( "SELECT DISTINCT meta_value FROM $wpdb->postmeta WHERE meta_key = %s AND meta_value LIKE %s LIMIT 30",
          $_GET['field_key'],
          '%' . $_GET['request'] . '%'
          ) );
